@@ -1,0 +1,102 @@
+:root{
+    --blue-color: rgb(109, 109, 250);
+}
+
+body{
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.container{
+    height: 100vh;
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 10px;
+}
+
+.bucket{
+    height: 40vh;
+    background-color: white;
+    width: 12vw;
+    box-sizing: border-box;
+    border: solid blue 5px;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+}
+
+.bucket .air{
+    height: 100%;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease;
+    align-items: center;
+    overflow: hidden;
+}
+
+.air h3{
+    margin: 0;
+}
+
+.glass-container{
+    display: grid;
+    grid-template-rows: 13vh 13vh;
+    grid-template-columns: 55px 55px 55px 55px;
+    grid-gap: 20px;
+}
+
+.glass{
+    background-color: white;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75%;
+    border-radius: 0 0 15px 15px;
+    border: solid blue;
+    /* box-sizing: content-box; */
+    padding: 5px;
+    cursor: pointer;
+}
+
+.bucket .water{
+    height: 0%;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0 0 15px 15px;
+    transition: 0.3s ease;
+}
+
+.glass.active{
+    background-color: blue;
+    color: white;
+}
+
+button{
+    width: 15vw;
+    height: 5vh;
+    color: white;
+    border: none;
+    border-radius: 5vh;
+    margin-top: 2vh;
+    background-color: blue;
+    cursor: pointer;
+}
