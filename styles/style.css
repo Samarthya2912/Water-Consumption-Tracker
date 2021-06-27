@@ -17,6 +17,7 @@ body {
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .bucket {
@@ -100,3 +101,39 @@ button {
   background-color: blue;
   cursor: pointer;
 }
+
+@media screen and (max-width: 815px) {
+  .bucket {
+      width: 20vw;
+    font-size: 3vw;
+  }
+
+  .glass {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 460px) {
+    .glass {
+        width: 10vw;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .glass {
+        width: 10vw;
+        font-size: 3vw;
+    }
+
+    .bucket{
+        height: 20vh;
+    }
+
+    .glass-container{
+        grid-template-columns: 10vw 10vw;
+        grid-template-rows: 10vh 10vh 10vh 10vh;
+    }
+}
+
+
